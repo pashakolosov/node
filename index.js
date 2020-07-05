@@ -14,9 +14,9 @@ let str = 'Дана переменная str, в которой хранится
 
 function circumcision(str, n) {
     if (str.lenth > n) {
-        return str.substr(0, n) + '...'
+        console.log(str.substr(0, n) + '...')
     }
-    else return str
+    else console.log(str)
 }
 
 console.log(circumcision(str, 5));
