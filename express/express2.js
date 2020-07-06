@@ -4,6 +4,12 @@ const { readFileSync } = require('fs')
 const app = express();
 
 
+app.use(req, res, next => {
+    data = now.data();
+    console.log(data);
+    next();
+})
+
 
 app.get('/home', (req, res) => {
     console.log(req.url);
